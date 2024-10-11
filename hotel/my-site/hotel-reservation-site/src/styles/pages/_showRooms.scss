@@ -1,0 +1,38 @@
+.show-rooms{
+    @extend .ptb-30;
+    &--container{
+        overflow: hidden;
+        @include right-flex;
+        align-items: flex-start;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        @extend .mtb-20;
+        &__img{
+            width: 25%;
+        }
+        &__info{
+            width: 60%;
+            @extend .p-30;
+            line-height: 1.7;
+            h2{
+                color: $black-color;
+            }
+            span{
+                font-weight:bolder;
+                color: $black-color;
+            }
+  
+            .btn{
+                width: 30%;
+                background-color: $orange-color;
+                color: $white-color;
+
+                border: 1px solid $orange-border-color;
+                &:hover{
+                    background-color: $orange-color-hover;
+                    border: 1px solid $orange-border-color-hover;
+                }
+            }
+
+        }
+    }
+}
